@@ -1,0 +1,95 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Places</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1352773892_20200203103540_20200203103555.png" style="height: 450px; width: 1000px;">
+    <ion-card-header>
+      <ion-card-title>Welcome, user</ion-card-title>
+      <ion-card-subtitle>Places for You</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Anything piqued your interest? Then it's about time to plan your travels!
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+  <br>
+  <ion-list>
+    <ion-card>
+      <ion-card-header>
+        <ion-thumbnail>
+          <img src="https://cdn.mos.cms.futurecdn.net/xXp45gLeBTBt4jPuZcawUJ-1200-80.jpg" />
+        </ion-thumbnail>
+        <ion-card-title>
+          Honeymoon
+        </ion-card-title>
+        <ion-card-subtitle>
+          A holiday on the Moon
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-button full expand="full"> 
+        Book
+        <ion-icon slot="start" name="cart"></ion-icon>
+      </ion-button>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-thumbnail>
+          <img src="https://i2-prod.walesonline.co.uk/incoming/article27890008.ece/ALTERNATES/s1200c/1_maxresdefault.jpg" />
+        </ion-thumbnail>
+        <ion-card-title>
+          Honeysun
+        </ion-card-title>
+        <ion-card-subtitle>
+          Some time alone staring at the sun
+        </ion-card-subtitle>
+      </ion-card-header>
+  <ion-button full expand="full"> 
+    Book
+    <ion-icon slot="start" name="cart"></ion-icon>
+  </ion-button>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-thumbnail>
+          <img src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg" />
+        </ion-thumbnail>
+        <ion-card-title>
+          Honeystar
+        </ion-card-title>
+        <ion-card-subtitle>
+          A holiday on the star
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-button full expand="full"> 
+        Book
+        <ion-icon slot="start" name="cart"></ion-icon>
+      </ion-button>
+    </ion-card>
+  </ion-list>
+  </ion-content>
+</div>
