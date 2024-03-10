@@ -26,11 +26,15 @@
 <ion-content>
   <ion-card>
     <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1352773892_20200203103540_20200203103555.png" style="height: 450px; width: 1000px;">
+    <ion-button full expand="full" [routerLink]="['/place-detail']"> 
+      Book
+      <ion-icon slot="start" name="cart"></ion-icon>
+    </ion-button>
     <ion-card-header>
       <ion-card-title>Welcome, user</ion-card-title>
-      <ion-card-subtitle>Places for You</ion-card-subtitle>
+      <ion-card-subtitle>Places for You</ion-card-subtitle> 
     </ion-card-header>
-  
+
     <ion-card-content>
       Anything piqued your interest? Then it's about time to plan your travels!
     </ion-card-content>
