@@ -1,34 +1,33 @@
-<ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
-</ion-menu>
-<div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
-
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>offers</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Offers</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">offers</ion-title>
+      <ion-title size="large">place-detail</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
 
-</div>
+<ion-card [routerLink]="['/place-detail']">
+  <ion-button>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto">
+            <ion-thumbnail><ion-img src="https://thescoop.co/wp-content/uploads/2019/03/DSCF7125-e1616156842269-1280x768.jpg?crop=1" alt="Image"></ion-img></ion-thumbnail>
+          </ion-col>
+          <ion-col>
+            <h1>Click here to book your visit to Kampong Ayer!</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-button>
+  </ion-card>
+</ion-content>

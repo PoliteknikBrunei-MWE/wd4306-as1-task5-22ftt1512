@@ -3,68 +3,45 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/places"></ion-back-button>
     </ion-buttons>
-    <ion-title>place-detail</ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        Edit
-      </ion-button>
-    </ion-buttons>
+    <ion-title>Place-detail</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-back-button defaultHref="/places"></ion-back-button>
-      </ion-buttons>
       <ion-title size="large">place-detail</ion-title>
-      <ion-buttons slot="end">
-        <ion-button>
-          Edit
-        </ion-button>
-      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-card>
-    <ion-card-content
-      ><ion-img src="assets/img/water-village.jpg" alt="Image"></ion-img>
+    <ion-card-content>
+      <ion-img src="https://thescoop.co/wp-content/uploads/2019/03/DSCF7125-e1616156842269-1280x768.jpg?crop=1" alt="Image"></ion-img>
     </ion-card-content>
   </ion-card>
 
   <ion-grid>
     <ion-row class="ion-justify-content-center">
       <ion-col>
-        <ion-text color="primary" style="text-align: center">
-          <h1>Brunei Darussalam</h1>
+        <ion-text color="" style="text-align: center">
+          <h1>Kampong Ayer</h1>
         </ion-text>
       </ion-col>
     </ion-row>
     <ion-row class="ion-justify-content-center">
+      <ion-card>
+        <ion-card-content style="text-align: center;">
+          Want to have a visit to one of the largest water village in Brunei? Come take a look!<br>
+          A beautiful place to visit with attractive sunset, view of the large river that span and reaches even the sea and ocean<br>
+          With also nice touches of historical sites such as Jong Batu!
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
       <ion-button>
-        <ion-icon slot="start" name="cart"></ion-icon>
         Book
       </ion-button>
-      <ion-modal trigger="open-modal" [isOpen]="isModalOpen">
-        <ng-template>
-          <ion-header>
-            <ion-toolbar>
-              <ion-title>Modal</ion-title>
-              <ion-buttons slot="end">
-                <ion-button (click)="setOpen(false)">Close</ion-button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-          <ion-content class="ion-padding">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-              dicta.
-            </p>
-          </ion-content>
-        </ng-template>
-      </ion-modal>
     </ion-row>
   </ion-grid>
 </ion-content>
